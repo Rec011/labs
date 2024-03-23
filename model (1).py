@@ -83,6 +83,7 @@ velocity = [((vx_values[i]) ** 2 + vy_values[i] ** 2) ** 0.5 for i in range(len(
 # plt.plot(range(0, TIME_1+TIME_2), vx_values[::int(DT ** -1)])
 plt.xlabel("Время, с")
 plt.ylabel("Скорость, м/с")
+
 # plt.plot(range(0, TIME_1+TIME_2), vy_values[::int(DT ** -1)])
 plt.plot(range(0, TIME_2), velocity[::int(DT ** -1)][TIME_1:TIME_1+TIME_2])
 plt.show()
